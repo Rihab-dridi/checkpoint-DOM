@@ -35,7 +35,7 @@ for (let i = 0; i < plus.length; i++) {
 var minus = document.querySelectorAll(".minus-btn");
 for (let i = 0; i < minus.length; i++) {
   minus[i].addEventListener("click", function () {
-    if (minus[i].previousElementSibling.innerHTML >= 0) {
+    if (minus[i].previousElementSibling.innerHTML > 0) {
       minus[i].previousElementSibling.innerHTML--;
     }
     totalPrice();
